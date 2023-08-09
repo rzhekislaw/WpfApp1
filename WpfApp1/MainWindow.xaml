@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="ModeSwitch" Content="Default" HorizontalAlignment="Left" Margin="660,34,0,0" VerticalAlignment="Top" Height="35" Width="100" RenderTransformOrigin="-1.5,-0.513" Click="ModeSwitch_Click"/>
+        <Button x:Name="Plus" Content="+" HorizontalAlignment="Left" Margin="695,346,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Plus_Click"/>
+        <Button x:Name="Pow2" Content="^2" HorizontalAlignment="Left" Margin="695,347,0,0" VerticalAlignment="Top" Height="30" Width="30" Visibility="Hidden" Click="Pow2_Click"/>
+        <TextBox x:Name="lOperand" HorizontalAlignment="Left" Height="35" Margin="81,34,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="rOperand" HorizontalAlignment="Left" Margin="81,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="100" Height="35"/>
+        <Button x:Name="Minus" Content="-" HorizontalAlignment="Left" Margin="695,296,0,0" VerticalAlignment="Top" Height="30" Width="30" Click="Minus_Click"/>
+        <Button x:Name="Multiply" Content="*" HorizontalAlignment="Left" Margin="695,246,0,0" VerticalAlignment="Top" Width="30" Height="30" RenderTransformOrigin="-6.867,-0.232" Click="Multiply_Click"/>
+        <Button x:Name="Divide" Content="/" HorizontalAlignment="Left" Margin="695,196,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="Divide_Click"/>
+        <Button x:Name="PowN" Content="^n" HorizontalAlignment="Left" Margin="695,297,0,0" VerticalAlignment="Top" Height="30" Width="30" RenderTransformOrigin="-3.233,-4.732" Visibility="Hidden" Click="PowN_Click"/>
+        <Button x:Name="Sqrt2" Content="√2" HorizontalAlignment="Left" Margin="695,247,0,0" VerticalAlignment="Top" Height="30" Width="30" Visibility="Hidden" Click="Sqrt2_Click"/>
+        <Button x:Name="SqrtN" Content="√n" HorizontalAlignment="Left" Margin="695,197,0,0" VerticalAlignment="Top" Height="30" Width="30" Visibility="Hidden" Click="SqrtN_Click"/>
+        <RadioButton x:Name="RB2" Content="2" HorizontalAlignment="Left" Margin="315,355,0,0" VerticalAlignment="Top" IsChecked="True" RenderTransformOrigin="0.903,1.607" Height="43" Visibility="Hidden" Click="RB2_Click"/>
+        <RadioButton x:Name="RB3" Content="3" HorizontalAlignment="Left" Margin="385,355,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.924,2.342" Height="43" Visibility="Hidden" Click="RB3_Click"/>
+        <RadioButton x:Name="RB4" Content="4" HorizontalAlignment="Left" Margin="455,355,0,0" VerticalAlignment="Top" Height="43" Visibility="Hidden" Click="RB4_Click"/>
+        <Label x:Name="SelectLabel" Content="Select n" HorizontalAlignment="Center" Height="35" Margin="0,308,0,0" VerticalAlignment="Top" Width="70" Visibility="Hidden"/>
+        <TextBox x:Name="Result" HorizontalAlignment="Left" Height="35" Margin="281,74,0,0" TextWrapping="Wrap" Text="Result" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
